@@ -1,0 +1,23 @@
+﻿Build started 22.1.2015 13:29:37.
+     1>Project "C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\AE\AE.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/WindowsSDK/Include /I"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/glew-1.11.0/include" /I"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/SDL2-2.0.3/include" /I"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/SDL2_image-2.0.0/include" /I"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/SDL2_mixer-2.0.0/include" /IC:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/Box2D_v2.3.0 /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\3rdparty\tinyxml2\tinyxml2.cpp ae.cpp log.cpp
+         tinyxml2.cpp
+         ae.cpp
+     1>c:\users\mauum\desktop\peliohjelmointi_01\peliohjelmointi\3rdparty\windowssdk\include\sal_supp.h(57): warning C4005: '__useHeader' : macro redefinition
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\sal.h(2886) : see previous definition of '__useHeader'
+     1>c:\users\mauum\desktop\peliohjelmointi_01\peliohjelmointi\3rdparty\windowssdk\include\specstrings_supp.h(77): warning C4005: '__on_failure' : macro redefinition
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\sal.h(2896) : see previous definition of '__on_failure'
+         log.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\Release\AE.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/WindowsSDK/Lib /LIBPATH:"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/glew-1.11.0/lib/Release/Win32" /LIBPATH:"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/SDL2-2.0.3/lib/x86" /LIBPATH:"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/SDL2_image-2.0.0/lib/x86" /LIBPATH:"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/SDL2_mixer-2.0.0/lib/x86" /LIBPATH:C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\/3rdparty/Box2D_v2.3.0/lib OpenGL32.lib GlU32.lib glew32.lib SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\Release\AE.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\Release\AE.lib" /MACHINE:X86 /SAFESEH Release\tinyxml2.obj
+         Release\ae.obj
+         Release\log.obj
+         Generating code
+         Finished generating code
+         AE.vcxproj -> C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\Release\AE.exe
+     1>Done Building Project "C:\Users\mauum\Desktop\peliohjelmointi_01\peliohjelmointi\AE\AE.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.07
