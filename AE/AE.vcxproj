@@ -52,13 +52,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)/3rdparty/WindowsSDK/Include;$(SolutionDir)/3rdparty/glew-1.11.0/include;$(SolutionDir)/3rdparty/SDL2-2.0.3/include;$(SolutionDir)/3rdparty/SDL2_image-2.0.0/include;$(SolutionDir)/3rdparty/SDL2_mixer-2.0.0/include;$(SolutionDir)/3rdparty/Box2D_v2.3.0;$(SolutionDir)/3rdparty/tinyxml2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/3rdparty/WindowsSDK/Include;$(SolutionDir)/3rdparty/glew-1.11.0/include;$(SolutionDir)/3rdparty/SDL2-2.0.3/include;$(SolutionDir)/3rdparty/SDL2_image-2.0.0/include;$(SolutionDir)/3rdparty/SDL2_mixer-2.0.0/include;$(SolutionDir)/3rdparty/Box2D_v2.2.0;$(SolutionDir)/3rdparty/tinyxml2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)/3rdparty/WindowsSDK/Lib;$(SolutionDir)/3rdparty/glew-1.11.0/lib/Release/Win32;$(SolutionDir)/3rdparty/SDL2-2.0.3/lib/x86;$(SolutionDir)/3rdparty/SDL2_image-2.0.0/lib/x86;$(SolutionDir)/3rdparty/SDL2_mixer-2.0.0/lib/x86;$(SolutionDir)/3rdparty/Box2D_v2.3.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>OpenGL32.lib;GlU32.lib;glew32.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/3rdparty/WindowsSDK/Lib;$(SolutionDir)/3rdparty/glew-1.11.0/lib/Release/Win32;$(SolutionDir)/3rdparty/SDL2-2.0.3/lib/x86;$(SolutionDir)/3rdparty/SDL2_image-2.0.0/lib/x86;$(SolutionDir)/3rdparty/SDL2_mixer-2.0.0/lib/x86;$(SolutionDir)/3rdparty/Box2D_v2.2.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGL32.lib;GlU32.lib;glew32.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -70,28 +70,59 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)/3rdparty/WindowsSDK/Include;$(SolutionDir)/3rdparty/glew-1.11.0/include;$(SolutionDir)/3rdparty/SDL2-2.0.3/include;$(SolutionDir)/3rdparty/SDL2_image-2.0.0/include;$(SolutionDir)/3rdparty/SDL2_mixer-2.0.0/include;$(SolutionDir)/3rdparty/Box2D_v2.3.0;$(SolutionDir)/3rdparty/tinyxml2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/3rdparty/WindowsSDK/Include;$(SolutionDir)/3rdparty/glew-1.11.0/include;$(SolutionDir)/3rdparty/SDL2-2.0.3/include;$(SolutionDir)/3rdparty/SDL2_image-2.0.0/include;$(SolutionDir)/3rdparty/SDL2_mixer-2.0.0/include;$(SolutionDir)/3rdparty/Box2D_v2.2.0;$(SolutionDir)/3rdparty/tinyxml2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)/3rdparty/WindowsSDK/Lib;$(SolutionDir)/3rdparty/glew-1.11.0/lib/Release/Win32;$(SolutionDir)/3rdparty/SDL2-2.0.3/lib/x86;$(SolutionDir)/3rdparty/SDL2_image-2.0.0/lib/x86;$(SolutionDir)/3rdparty/SDL2_mixer-2.0.0/lib/x86;$(SolutionDir)/3rdparty/Box2D_v2.3.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>OpenGL32.lib;GlU32.lib;glew32.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/3rdparty/WindowsSDK/Lib;$(SolutionDir)/3rdparty/glew-1.11.0/lib/Release/Win32;$(SolutionDir)/3rdparty/SDL2-2.0.3/lib/x86;$(SolutionDir)/3rdparty/SDL2_image-2.0.0/lib/x86;$(SolutionDir)/3rdparty/SDL2_mixer-2.0.0/lib/x86;$(SolutionDir)/3rdparty/Box2D_v2.2.0/lib/release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGL32.lib;GlU32.lib;glew32.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\3rdparty\tinyxml2\tinyxml2.cpp" />
     <ClCompile Include="ae.cpp" />
+    <ClCompile Include="ai_list.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="deletion_list.cpp" />
+    <ClCompile Include="duck.cpp" />
+    <ClCompile Include="hunter.cpp" />
+    <ClCompile Include="hunter_ai.cpp" />
+    <ClCompile Include="level.cpp" />
     <ClCompile Include="log.cpp" />
+    <ClCompile Include="render_list.cpp" />
+    <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ae.h" />
+    <ClInclude Include="ai_character.h" />
+    <ClInclude Include="ai_list.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="collision.h" />
+    <ClInclude Include="decision_tree.h" />
+    <ClInclude Include="deletion_list.h" />
+    <ClInclude Include="duck.h" />
+    <ClInclude Include="hunter.h" />
+    <ClInclude Include="hunter_ai.h" />
+    <ClInclude Include="level.h" />
     <ClInclude Include="log.h" />
+    <ClInclude Include="physable.h" />
+    <ClInclude Include="renderable.h" />
+    <ClInclude Include="render_list.h" />
+    <ClInclude Include="vertex.h" />
+    <ClInclude Include="world.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="change_log.txt" />
+    <Image Include="atlas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="test_level.tmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hunter_ai_tree.pptx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

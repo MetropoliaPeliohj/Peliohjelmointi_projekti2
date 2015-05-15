@@ -1,4 +1,0 @@
-22/01/2015	MMU		Added logging.
-03/02/2015	MMU		Added tinyxml2 to include directories.
-
-
