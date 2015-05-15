@@ -1,1 +1,4 @@
-/AE/Debug
+AE/Debug/*
+peliohjelmointi.sdf
+peliohjelmointi.v12.suo
+Debug/AE.*
